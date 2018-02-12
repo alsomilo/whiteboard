@@ -4,10 +4,12 @@ So, on each iteration of the loop, the variable t will be equal to the correspon
 
 public class EnhancedForLoop {
     public static void main(String[] args) {
-        int[ ] primes = {2, 3, 5, 7};
+        int[ ][ ] primes = {{2, 3, 5, 7},{1, 0, 2, 4}};
         
-        for (int t: primes) {
-            System.out.println(t); 
+        for (int[] t: primes) 
+        {
+	    for (int q: t)     
+            System.out.println(q); 
         }
     }
 }
